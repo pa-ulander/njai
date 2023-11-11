@@ -39,14 +39,15 @@ body {
   scroll-behavior: smooth;
 }
 
-/* hides scrollbar */
 #chat_container::-webkit-scrollbar {
   display: none;
 }
+
 main {
   width: 100%;
   height: calc(100% - 80px);
 }
+
 .wrapper {
   width: 100%;
   padding: 15px;
@@ -72,7 +73,7 @@ main {
   height: 36px;
   border-radius: 5px;
 
-  background: #5436da;
+  background: #222;
 
   display: flex;
   justify-content: center;
@@ -80,7 +81,7 @@ main {
 }
 
 .ai .profile {
-  background: #10a37f;
+  background: #333;
 }
 
 .profile img {
@@ -99,9 +100,11 @@ main {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .message::-webkit-scrollbar {
   display: none;
 }
+
 form {
   width: 100%;
   max-width: 1280px;
@@ -112,17 +115,18 @@ form {
   flex-direction: row;
   gap: 10px;
 }
+
 @media (max-width: 1280px) {
   form {
     max-width: calc(100% - 40px);
   }
 }
+
 textarea {
   width: 100%;
-
+  min-height: 3%;
   color: #fff;
   font-size: 18px;
-
   padding: 10px;
   background: transparent;
   border-radius: 5px;
